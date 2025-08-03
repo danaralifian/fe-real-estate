@@ -3,13 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 import formatUSD from '@/utils/format-usd'
 import useDetailProperty from '@/hooks/use-detail-property';
-import { PropertyDetailProps } from './property.type';
 import { notFound } from 'next/navigation';
 import Loading from '../Loading/loading';
 import { PortableText } from '@portabletext/react';
 import { MapPin } from 'lucide-react';
 
-export default function PropertyDetail({ slug }: PropertyDetailProps) {
+export default function PropertyDetail({ slug }: { slug: string }) {
     const { property, loading } = useDetailProperty(slug);
 
     if (loading) return <Loading />
