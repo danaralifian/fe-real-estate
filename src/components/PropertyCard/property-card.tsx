@@ -3,14 +3,17 @@ import { PropertyCardProps } from './property-card.type'
 import formatUSD from '@/utils/format-usd'
 import { MapPin } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PropertyCard(property: PropertyCardProps) {
     return (
         <Link href={`/${property.slug}`}>
             <div className="border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition cursor-pointer">
-                <img
+                <Image
                     src={property.imageUrl}
                     alt={property.title}
+                    width={800}
+                    height={300}
                     className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
