@@ -5,4 +5,5 @@ export type PropertyCardProps = {
   price: number;
   location: string;
   imageUrl: string;
+  slug: string;
 };

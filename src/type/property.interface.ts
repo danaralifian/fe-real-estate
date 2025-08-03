@@ -5,4 +5,5 @@ export interface Property {
   price: number;
   location: string;
   imageUrl: string;
+  slug: string;
 }

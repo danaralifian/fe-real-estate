@@ -4,4 +4,5 @@ export const getProperties = `*[_type == "property" && isPublished == true]{
     description,
     price,
     location,
+    "slug": slug.current,
     "imageUrl": image.asset->url}`;
