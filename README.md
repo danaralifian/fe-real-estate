@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Property Listing App
+
+A modern real estate listing web application built with **Next.js App Router**, **Sanity CMS**, **Tailwind CSS**, and **Lucide Icons**.
+
+## Features
+
+- View property listings with title, price, image, and location.
+- Rich description rendered from Sanity (using PortableText).
+- Icon support using Lucide React.
 
 ## Getting Started
 
