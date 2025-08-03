@@ -1,6 +1,12 @@
 import PropertyDetail from "@/components/PropertyDetail/property-detail";
 
-export default function DetailPage({ params }: { params: { slug: string } }) {
+interface PageProps {
+    params: {
+        slug: string;
+    };
+}
+
+export default function DetailPage({ params }: PageProps) {
 
     return (
         <div>
