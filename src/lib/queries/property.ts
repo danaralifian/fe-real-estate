@@ -1,4 +1,4 @@
-export const getProperties = `*[_type == "property"]{
+export const getProperties = `*[_type == "property" && isPublished == true]{
     _id,
     title,
     description,
