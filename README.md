@@ -13,6 +13,7 @@ A modern real estate listing web application built with **Next.js App Router**, 
 First, run the development server:
 
 ```bash
+cp .env.example .env
 npm run dev
 # or
 yarn dev
